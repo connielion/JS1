@@ -1,7 +1,5 @@
-var myHist = "I am now in FresYes.";
+var logThis = "I'd like to learn the process of making an app, learn another language, and get another step closer to become a front-end developer etc. :D'";
 
+var myValue = confirm(logThis);
 
-
-
-var myValue = confirm(myHist);
-console.log(myValue);
+console.log(logThis);
