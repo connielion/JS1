@@ -1,0 +1,5 @@
+var firstName = "Connie";
+
+var lastName= "Lai";
+
+document.getElementById("hi").innerHTML = firstName + lastName;
