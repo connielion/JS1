@@ -1,22 +1,38 @@
 /*
-Asks for the user's first name
-Asks for the user's last name
-Logs the user's first name to the console
-Alerts the user's last name
-*Confirms the user's birthday and alerts the resulting birthday
-Include the app.js in an empty html page
-Add it to a repository's gh-pages branch so I can test it
-Send me the url of the gh-pages on Slack
-* Extra points if you use JavaScript's Date object for the birthday.
+Prompts your user for their name.
+Next, ask the user's favorite color. (Provide the user with the basic 10 colors as options i.e. red, orange, yellow, green, blue, pink, purple, black, white, and grey).
+Depending on the color, write 9 different responses for the possible answers. Include the user's name in the response message.
 */
 
-var firstName = prompt('Your first name is...?');
-var lastName = prompt('Your last name is...?');
+var askName = prompt('Your name is...?');
+var askColor = prompt("Pick favorite color: red, orange, yellow, green, blue, pink, purple, black, white, and grey.").
 
-console.log(firstName);
-
-alert(lastName);
-
-var bday = prompt('Ur bday is...?');
-confirm.log(bday);
-alert(bday);
+switch {
+  case 1:
+  askColor === red;
+  break;
+  case 2:
+  askColor === orange;
+  break;
+  case 3:
+  askColor === yellow;
+  break;
+  case 4:
+  askColor === green;
+  break;
+  case 5:
+  askColor === blue;
+  break;
+  case 6:
+  askColor === pink;
+  break;
+  case 7:
+  askColor === purple;
+  break;
+  case 8:
+  askColor === black;
+  break;
+  case 9:
+  askColor === white;
+  break;
+}
