@@ -1,22 +1,43 @@
-/*
-Asks for the user's first name
-Asks for the user's last name
-Logs the user's first name to the console
-Alerts the user's last name
-*Confirms the user's birthday and alerts the resulting birthday
-Include the app.js in an empty html page
-Add it to a repository's gh-pages branch so I can test it
-Send me the url of the gh-pages on Slack
-* Extra points if you use JavaScript's Date object for the birthday.
+
+/*let obj1 {
+  name: "Connie"
+};
+
+let obj2 {
+  name: "Connie"
+};
+
+console.log(obj1 === obj2); //returns falsy b/c objects!!
+
+For loop
+for(let i = 0; i<5; i++){
+  console.log(i);
+}
+
+
+console.log("three" +15);
+
+let myNumber = prompt("Give me a number?");
+
+ //parse = change into
+alert(
+  isNaN((parseInt(myNumber) / 2))
+
+  parseInt() converts strings to num/floats
+);
+
+
+let str = prompt('Your fav number?');
+
+str.toString(); //converts to string object; only time when this doesn't work: on JSON objects
+alert(`Your fav number is ${str}`);
+
 */
 
-var firstName = prompt('Your first name is...?');
-var lastName = prompt('Your last name is...?');
+let ask = prompt('Give me a number?');
+let value = parseInt(ask);//changed into number type;
 
-console.log(firstName);
-
-alert(lastName);
-
-var bday = prompt('Ur bday is...?');
-confirm.log(bday);
-alert(bday);
+alert(value + 42);
+alert(value - 42);
+alert(value * 42);
+alert(value / 42);
