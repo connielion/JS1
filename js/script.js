@@ -15,9 +15,9 @@ if (age >= 18 ) { //over 18
   confirm("Go ahead!");
 } else if (age < 18) { //minor
   alert("You're underage!");
-} else if (age >= 18) { //
+} else if (age > 18) { //
   prompt('Are you less than 80 years old?');
-} else if (age >18 && age <80) { // 18< age <80
+} else if (age >18 || age <80) { // 18< age <80
  prompt('Do you like Star Wars?');
 } else if (age >79){
   prompt('Do you like prunes?');
