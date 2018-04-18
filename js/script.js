@@ -1,8 +1,17 @@
-var logThis = "I'd like to learn the process of making an app, learn another language, and get another step closer to become a front-end developer etc. :D'";
+var myStatus = prompt("Are you sleepy? (Enter: Y/N; not case sensitive)");
 
+if (myStatus === "Y" || myStatus === "y") {
+  alert("Go to bed.")
 
-var logInConsole = confirm(logThis);
-
-console.log(logInConsole);
-
-document.write("I think I really got it this time.");
+} else if (myStatus === "N" || myStatus === "n") {
+    let movie = confirm("Wanna watch a movie?")
+    if (movie === true) {
+      alert("You go pick the movie. I'll make popcorns!")
+    }
+    else {
+      prompt("What would you like to do?")
+    }
+}
+else {
+  alert("Go do some coding!");
+};
