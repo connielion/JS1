@@ -6,9 +6,10 @@ If they say they don't Star Wars, end the program. In all other cases, alert the
 */
 
 let bday = prompt("What's your birthday?, (MM/DD/YYYY)");//input bday
-var bYear = bday.getFullYear(); //YYYY
-var age =  (2018-bYear); //= user's age
-confirm("You're" + age + "?"); //confirm age
+bYear = bday.getFullYear(); //YYYY
+confirm("You were born in " + bYear + "?"); //confirm age
+
+let age =  (2018-bYear); //= user's age
 
 if (age >= 18 ) { //over 18
   confirm("Go ahead!");
