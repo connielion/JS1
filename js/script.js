@@ -11,18 +11,19 @@ confirm("You were born in " + bYear + "?"); //confirm age
 
 let age =  (2018-bYear); //= user's age
 
-if (age >= 18 ) { //over 18
+if (age > 18 ) { //over 18 proceed
   confirm("Go ahead!");
-} else if (age < 18) { //minor
+  if (age >= 18) { //
+    prompt('Are you less than 80 years old?');
+  } else if (age >18 || age <80) { // 18< age <80
+   prompt('Do you like Star Wars?');
+  } else if (age >79){
+    prompt('Do you like prunes?');
+  } else {
+    alert('Are you Darth Vader?!!!');
+  }
+} else (age < 18) { //minor
   alert("You're underage!");
-} else if (age > 18) { //
-  prompt('Are you less than 80 years old?');
-} else if (age >18 || age <80) { // 18< age <80
- prompt('Do you like Star Wars?');
-} else if (age >79){
-  prompt('Do you like prunes?');
-} else {
-  alert('Are you Darth Vader?!!!');
 }
 
 
