@@ -5,13 +5,14 @@ Now ask the users who are between 18 and 80 if they like Star Wars. If they are 
 If they say they don't Star Wars, end the program. In all other cases, alert them with a message.
 */
 
-var askAge = prompt("What's your age?");
-var age = new Date(askAge);
-alert(age);
+let bday = prompt("What's your birthday?, (MM/DD/YYYY)");//input bday
+var bYear = bday.getFullYear(); //YYYY
+var age =  (2018-bYear); //= user's age
+confirm("You're" + age + "?"); //confirm age
 
 if (age >= 18 ) { //over 18
-  console.log("Go ahead!");
-} else (age < 18) { //minor
+  confirm("Go ahead!");
+} else if (age < 18) { //minor
   alert("You're underage!");
 } else if (age >= 18) { //
   prompt('Are you less than 80 years old?');
@@ -20,8 +21,9 @@ if (age >= 18 ) { //over 18
 } else if (age >= 80){
   prompt('Do you like prunes?');
 } else {
-  prompt('Are you Darth Vader?');
+  alert('Are you Darth Vader?!!!');
 }
+
 
 
 
