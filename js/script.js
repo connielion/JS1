@@ -8,7 +8,7 @@ If they say they don't Star Wars, end the program. In all other cases, alert the
 let birthday = prompt("What's your birthday?, (MM/DD/YYYY)");
 var checkAge = birthday.getFullYear();
 
-alert("You were born in " + birthday + "?");
+alert("You were born in " + birthday + " ?");
 
 if (checkAge >= 18 ) { //over 18
   confirm("Go ahead!");
