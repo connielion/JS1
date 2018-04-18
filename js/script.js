@@ -1,28 +1,20 @@
-/*
+var myStatus = prompt("Are you sleepy? (Enter: Y/N; not case sensitive)");
 
-Now that all your users at this point are at least 18, ask if they are less than 80 years old.
-Now ask the users who are between 18 and 80 if they like Star Wars. If they are over 80, ask if they like prunes.
-If they say they don't Star Wars, end the program. In all other cases, alert them with a message.
-*/
+if (myStatus === "Y" || myStatus === "y") {
+  alert("Go to bed.")
 
-let bday = prompt("What's your birthday?, (MM/DD/YYYY)");//input bday
-var bYear = bday.getFullYear(); //YYYY
-var age =  (2018-bYear); //= user's age
-confirm("You're" + age + "?"); //confirm age
-
-if (age >= 18 ) { //over 18
-  confirm("Go ahead!");
-} else if (age < 18) { //minor
-  alert("You're underage!");
-} else if (age >= 18) { //
-  prompt('Are you less than 80 years old?');
-} else if (age >18 && age <80) { // 18< age <80
- prompt('Do you like Star Wars?');
-} else if (age >= 80){
-  prompt('Do you like prunes?');
-} else {
-  alert('Are you Darth Vader?!!!');
+} else if (myStatus === "N" || myStatus === "n") {
+    let movie = confirm("Wanna watch a movie?")
+    if (movie === true) {
+      alert("You go pick the movie. I'll make popcorns!")
+    }
+    else {
+      prompt("What would you like to do?")
+    }
 }
+else {
+  alert("Go count sheep!");
+};
 
 
 
@@ -72,4 +64,3 @@ switch {
   askColor === white;
   break;
 }
-*/
