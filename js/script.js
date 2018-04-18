@@ -5,7 +5,7 @@ Now ask the users who are between 18 and 80 if they like Star Wars. If they are 
 If they say they don't Star Wars, end the program. In all other cases, alert them with a message.
 */
 
-let bday = prompt("What's your birthday?, (MM/DD/YYYY)");//input bday
+let bday = new Date(prompt("What's your birthday?, (MM/DD/YYYY)"));//input bday
 bYear = bday.getFullYear(); //YYYY
 confirm("You were born in " + bYear + "?"); //confirm age
 
@@ -19,7 +19,7 @@ if (age >= 18 ) { //over 18
   prompt('Are you less than 80 years old?');
 } else if (age >18 && age <80) { // 18< age <80
  prompt('Do you like Star Wars?');
-} else if (age >= 80){
+} else if (age >79){
   prompt('Do you like prunes?');
 } else {
   alert('Are you Darth Vader?!!!');
