@@ -10,19 +10,6 @@ var checkAge = new Date(birthday);
 
 alert("You were born on" + birthday + "?");
 
-if (checkAge >= 18 ) { //over 18
-  confirm("Go ahead!");
-} else if (checkAge < 18) { //minor
-  alert("You're underage!");
-} else if (checkAge >= 18) { //
-  prompt('Are you less than 80 years old?');
-} else if (checkAge >18 && checkAge <80) { // 18< age <80
- prompt('Do you like Star Wars?');
-} else if (checkAge >= 80){
-  prompt('Do you like prunes?');
-} else {
-  alert('Are you Darth Vader?!!!');
-}
 
 
 
