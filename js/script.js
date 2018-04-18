@@ -11,7 +11,7 @@ alert(age);
 
 if (age >= 18 ) { //over 18
   console.log("Go ahead!");
-} else (age < 18) { //minor
+} else if (age < 18) { //minor
   alert("You're underage!");
 } else if (age >= 18) { //
   prompt('Are you less than 80 years old?');
