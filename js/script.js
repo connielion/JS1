@@ -13,6 +13,6 @@ if (myStatus === "Y" || myStatus === "y") {
       prompt("What would you like to do?")
     }
 }
-else {
+else {å
   alert("Go do some coding!");
 };
