@@ -1,7 +1,14 @@
 let myStatus = prompt("Are you sleepy? (Enter: Y/N; not case sensitive)");
 
 if (myStatus === "Y" || myStatus === "y") {
-  alert("Were you trying to solve the FizzBuzz?")
+  prompt("Were you trying to solve the FizzBuzz?")
+
+    if ((prompt("Were you trying to solve the FizzBuzz?"))== false) {
+      prompt('What were you doing?')
+    }
+    else {
+      alert("Drink some coffee?")
+    }
 
 } else if (myStatus === "N" || myStatus === "n") {
     let movie = confirm("Wanna watch a movie?")
