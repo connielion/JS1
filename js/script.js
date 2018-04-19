@@ -1,14 +1,15 @@
-let myStatus = prompt("Are you sleepy? (Enter: Y/N; not case sensitive)");
+let myStatus = prompt("Are you sleepy? (Enter: Yes/No; not case sensitive)");
 
-if (myStatus === "Y" || myStatus === "y") {
-  prompt("Were you trying to solve the FizzBuzz?")
+if (myStatus === "Y" || myStatus === "y" || myStatus == "yes" || myStatus == "Yes") {
+  let fizzbuzz = prompt("Were you trying to solve the FizzBuzz?")
 
-    if ((prompt("Were you trying to solve the FizzBuzz?"))== false) {
-      prompt('What were you doing?')
-    }
-    else {
-      alert("Drink some coffee?")
-    }
+  if (fizzbuzz == "yes" || fizzbuzz == "Yes") {
+      alert("Nice!")
+
+  }
+  else {
+    alert("Oh, ok.")
+  }
 
 } else if (myStatus === "N" || myStatus === "n") {
     let movie = confirm("Wanna watch a movie?")
