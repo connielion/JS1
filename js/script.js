@@ -1,25 +1,34 @@
-let myStatus = prompt("Are you sleepy? (Enter: Yes/No; not case sensitive)");
+/*
 
-if (myStatus === "Y" || myStatus === "y" || myStatus === "yes" || myStatus === "Yes") {
-      let fizzbuzz = prompt("Were you trying to solve the FizzBuzz?")
+Prompts your user for their name.
+Next, ask the user's favorite color. (Provide the user with the basic 10 colors as options i.e. red, orange, yellow, green, blue, pink, purple, black, white, and grey).
+Depending on the color, write 9 different responses for the possible answers. Include the user's name in the response message.
+*/
 
-      if (fizzbuzz == "yes" || fizzbuzz == "Yes") {
-          alert("Nice!")
+var askName = prompt("Comó se llama?");
 
-      }
-      else {
-        alert("Oh, ok.")
-      }
+var askColor = prompt("Cuál es tu color favorito? (LOWERCASE ONLY: red, orange, yellow, green, blue, pink, purple, black, white, and grey)");
 
-} else if (myStatus === "N" || myStatus === "n" || myStatus === "no" || myStatus === "No" ) {
-    let movie = confirm("Wanna watch a movie?")
-    if (movie === true) {
-      alert("You go pick the movie. I'll make popcorns!")
-    }
-    else {
-      prompt("What would you like to do? ")
-    }
+switch(askColor) {
+  case 'red':
+  case 'orange':
+  case 'purple':
+  case 'pink':
+  alert("Eww, " + askColor + "! You know what? You suck, " + askName + "!");
+  break;
+
+  case 'blue':
+  case 'yellow':
+  alert(`Hey, ${askName}! It's my favorite color too!`);
+  break;
+
+  case 'white':
+  case 'black':
+  case 'grey':
+  alert('You are boring.');
+  break;
+
+  default:
+  alert("YOU CAN'T ENGLISH?! ")
+
 }
-else {
-  alert("Go do some coding!");
-};
