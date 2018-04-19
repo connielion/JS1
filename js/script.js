@@ -20,9 +20,7 @@ while (true) {
 //SWITCH STATEMENT - evaluates single parameter
 
 /*
-
 var numOfProjects = prompt(“How many projects do you have? You can choose a number 0-2.“);
-
 switch(parseInt(numOfProjects)) {
  case 0:
      alert(“You won’t have a projects section on your page”);
@@ -42,6 +40,19 @@ switch(parseInt(numOfProjects)) {
 Ternary Operator = short-hand for If-Else
 
 // condition ? exp 1 : exp2
-let age = prompt("your age?")
+/* let age = prompt("your age?")
 
 (parseInt(age))>=18 ? alert("Yay") : alert("Nay")
+
+*/
+
+let cars = ["jeep", "subaru", "honda"];
+//cars.length --> 3
+//cars.push("bmw") adds bmw to the end
+
+// splice(index #, # of items you want to remove, "new item")
+
+//splice needs 1 parameter
+
+
+//slice() with no argument returns exact copy of array
