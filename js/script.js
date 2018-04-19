@@ -1,25 +1,47 @@
-let myStatus = prompt("Are you sleepy? (Enter: Yes/No; not case sensitive)");
+let emailArr;
+var yourEmail;
 
-if (myStatus === "Y" || myStatus === "y" || myStatus === "yes" || myStatus === "Yes") {
-      let fizzbuzz = prompt("Were you trying to solve the FizzBuzz?")
-
-      if (fizzbuzz == "yes" || fizzbuzz == "Yes") {
-          alert("Nice!")
-
-      }
-      else {
-        alert("Oh, ok.")
-      }
-
-} else if (myStatus === "N" || myStatus === "n" || myStatus === "no" || myStatus === "No" ) {
-    let movie = confirm("Wanna watch a movie?")
-    if (movie === true) {
-      alert("You go pick the movie. I'll make popcorns!")
-    }
-    else {
-      prompt("What would you like to do? ")
-    }
+while (true) {
+  //evaluates the truthyness of 'true'
+  var yourEmail = prompt('What is your email?');
+  emailArr = yourEmail.split("");
+  if (!(emailArr.includes('@'))) {
+    var yourEmail = prompt('That was not a valid email. Please try again.');
+  }
+  else if (!(emailArr.includes('.'))) {
+    var yourEmail = prompt('That was not a valid email. Please try again.');
+  }
+  else {
+    alert('Thanks for providing a valid email.');
+  }
 }
-else {
-  alert("Go do some coding!");
-};
+
+
+//SWITCH STATEMENT - evaluates single parameter
+
+/*
+
+var numOfProjects = prompt(“How many projects do you have? You can choose a number 0-2.“);
+
+switch(parseInt(numOfProjects)) {
+ case 0:
+     alert(“You won’t have a projects section on your page”);
+     break;
+    case 1:
+     alert(“You’ll only have one showing”);
+     break;
+    case 2:
+   alert(“You’ll only have one showing”);
+        break;
+ default:
+   alert(’You didn\‘t follow the rules.’);
+}
+*/
+
+
+Ternary Operator = short-hand for If-Else
+
+// condition ? exp 1 : exp2
+let age = prompt("your age?")
+
+(parseInt(age))>=18 ? alert("Yay") : alert("Nay")
