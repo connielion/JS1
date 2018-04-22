@@ -16,23 +16,18 @@ let todo = [
       time: time1,
       task: task2,
       time: time2,
-      task: task3
+      task: task3,
       time: time3
     }
 ];
 
 console.log(todo[0].task, todo[0].time);
 
-var length = todo.length;
-var days = []
+let length = todo.length;
 
-for (let i = 0; i < todo.length, i++){ //loops once for each task
-  let askTime = prompt("What day do you want to complete this task?");
+
+for (let i = 0; i < length; i++){ //loops once for each task
+  let askTime = prompt("When would you like to complete this task?");
   todo[i].time = askTime;
 
-}
-
-
-while () {
-  console.log(task);
 }
