@@ -1,47 +1,38 @@
-let emailArr;
-var yourEmail;
-
-while (true) {
-  //evaluates the truthyness of 'true'
-  var yourEmail = prompt('What is your email?');
-  emailArr = yourEmail.split("");
-  if (!(emailArr.includes('@'))) {
-    var yourEmail = prompt('That was not a valid email. Please try again.');
-  }
-  else if (!(emailArr.includes('.'))) {
-    var yourEmail = prompt('That was not a valid email. Please try again.');
-  }
-  else {
-    alert('Thanks for providing a valid email.');
-  }
-}
-
-
-//SWITCH STATEMENT - evaluates single parameter
-
 /*
-
-var numOfProjects = prompt(“How many projects do you have? You can choose a number 0-2.“);
-
-switch(parseInt(numOfProjects)) {
- case 0:
-     alert(“You won’t have a projects section on your page”);
-     break;
-    case 1:
-     alert(“You’ll only have one showing”);
-     break;
-    case 2:
-   alert(“You’ll only have one showing”);
-        break;
- default:
-   alert(’You didn\‘t follow the rules.’);
-}
+Creates an array of things you need or want to do this weekend by collecting three todos from the user.
+Using a for loop, change the items in the array by adding days they should be completed to each index.
+Using a while loop, find the task that will take the longest and log it to the console.
+Using a do while loop, add the string 'done' to all the tasks other than the one that will take the longest
+Finally, alert all the tasks that are marked done in the todo array.
 */
+var task1 = prompt("First thing you want to do this weekend is...? (Put in a task that will take the longest.");
+var task2 = prompt("Second thing you want to do this weekend is...?");
+var task3 = prompt("Third thing you want to do this weekend is...)?");
 
 
-Ternary Operator = short-hand for If-Else
+let todo = [
+    { //objects
+      task: task1,
+      time: time1,
+      task: task2,
+      time: time2,
+      task: task3
+      time: time3
+    }
+];
 
-// condition ? exp 1 : exp2
-let age = prompt("your age?")
+console.log(todo[0].task, todo[0].time);
 
-(parseInt(age))>=18 ? alert("Yay") : alert("Nay")
+var length = todo.length;
+var days = []
+
+for (let i = 0; i < todo.length, i++){ //loops once for each task
+  let askTime = prompt("What day do you want to complete this task?");
+  todo[i].time = askTime;
+
+}
+
+
+while () {
+  console.log(task);
+}
