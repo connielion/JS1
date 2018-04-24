@@ -9,6 +9,8 @@ var askName = prompt("Comó se llama?");
 
 var askColor = prompt("Cuál es tu color favorito? (LOWERCASE ONLY: red, orange, yellow, green, blue, pink, purple, black, white, and grey)");
 
+//let messageToUser;
+
 switch(askColor) {
   case 'red':
   case 'orange':
@@ -17,18 +19,22 @@ switch(askColor) {
   alert("Eww, " + askColor + "! You know what? You suck, " + askName + "!");
   break;
 
+    //messageToUser = "Bleh."
   case 'blue':
   case 'yellow':
   alert(`Hey, ${askName}! It's my favorite color too!`);
+  //messageToUser = "ew."
   break;
 
   case 'white':
   case 'black':
   case 'grey':
   alert('You are boring.');
+  ////messageToUser = "meh"
   break;
 
   default:
   alert("YOU CAN'T ENGLISH?! ")
-
+ ////messageToUser="Ew."
 }
+//alert(messageToUser)
