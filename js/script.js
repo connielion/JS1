@@ -28,9 +28,12 @@ let todo = [
       time: time3
     }
 ];
-*/
+
 
 console.log(todo[0].task, todo[0].time);
+*/
+
+
 
 let length = todo.length;
 
