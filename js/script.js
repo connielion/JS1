@@ -1,16 +1,14 @@
-//FUNCTION
-/*
-let num = prompt("Enter a number and we'll the square!");
-function squareNum(num){
-  return num*num;
+
+let dogYr = prompt('Enter year.');
+
+
+
+function dogToHumanYr(dogAge) {
+
+var year = dogYr * 7;
+
+alert(year);
+
 }
-alert(squareNum(num));
-*/
 
-function greet(name, greeting) {
-
-  return `Hello, ${name}, ${greeting}!`;
-}
-
-let hi = greet("Connie", "Hi!!!");
-alert(hi);
+dogeToHumanYr(dogeYr);
