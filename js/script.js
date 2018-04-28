@@ -11,8 +11,7 @@ function square(num){
   else if (isNaN(num)){
     alert("Not a number!");
 
-  }
-
+  } 
 }
 
 square(num); //call function
