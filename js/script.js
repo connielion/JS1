@@ -8,8 +8,9 @@ function square(num){
 
     alert(`Square of that number is ${numSquare}`);
   }
-  else{
+  else if (isNaN(num)){
     alert("Not a number!");
+
   }
 
 }
