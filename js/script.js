@@ -1,14 +1,16 @@
+let num = parseInt(prompt("Enter a number."));
+let numSquare = num * num;
 
-let dogYr = prompt('Enter year.');
+function square(num){
 
+  if(!isNaN(num)){ //if user enters number
 
-
-function dogToHumanYr(dogAge) {
-
-var year = dogYr * 7;
-
-alert(year);
+    alert(numSquare);
+  }
+  else{
+    alert("Not a number!");
+  }
 
 }
 
-dogeToHumanYr(dogeYr);
+square(num); //call function
