@@ -30,6 +30,15 @@ str.slice(-1) !== "."      <--last char isn't a period
 (str.charAt(0) !== str.charAt(0).toLowerCase()) && (str.slice(-1) == ".") <=capitalized AND last char is '.'
 */
 
+//check case, period
+if() {
+
+} else if {
+
+} else {
+
+}
+
 return;
 
 }
