@@ -1,4 +1,5 @@
-/* let num = parseInt(prompt("Enter a number."));
+let num = parseInt(prompt("Enter a number."));
+
 let numSquare = num * num;
 
 function square(num){
@@ -13,7 +14,7 @@ function square(num){
 
 }
 
-square(num); //call function*/
+square(num); //call function
 
 /*
 In a second function, capitalize the first letter of a string and add a period (.) to the end of the string if it doesn't already end with a period
