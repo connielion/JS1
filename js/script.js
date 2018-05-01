@@ -1,102 +1,43 @@
 /*
-let num = parseInt(prompt("Enter a number."));
+let blueDivs = document.getElementsByClassName('blue'); //getElements = array type
+//console.log(blueDivs[0]);//html collection, type array
 
-let numSquare = num * num;
+//DOM collection
+let h1 =document.getElementByTagName('h1');
 
-function square(num){
+//DOM nodes
 
-  if(!isNaN(num)){ //if user enters number
+let para = document.getElementsByID('para');
+console.log(para);
 
-    alert(`Square of that number is ${numSquare}`);
-  }
-  else{
-    alert("Not a number!");
-  }
+let queryBlues = document.querySelector('h1'); //gives single element
 
+console.log(queryBlues);
+
+
+let queryBlus = document.querySelectorAll('div'); //gives an array
+console.log(queryBlus);
+
+
+
+
+function queryBodyID(element, methods) {
+  let elementToQ = document.method('element');
+  console.log(elementToQ);  //just bodyQ would give array, need index to give element
 }
+let ep = prompt('Give me an element');
 
-square(num); //call function
+queryBodyID(el, method);
 */
 
-In a second function, capitalize the first letter of a string and add a period (.) to the end of the string if it doesn't already end with a period
-Create a string that will flip the position of the first and second half of a string. For example, the string “abcdef” would be returned as “defabc”. Hint: use substring.*/
+const button = document.querySelector('.btn-success');
 
-
-let str = prompt("Enter a sentence, all lowercased and no period.");
-
-function check(string) {
-
-
-/*
-CHECKS:
-
-str.charAt(0) !== str.charAt(0).toLowerCase()   //<---first char isn't lowercased
-
-str.slice(-1) !== "."      //<--last char isn't a period
-
-(str.charAt(0) !== str.charAt(0).toLowerCase()) && (str.slice(-1) == ".") <---capitalized AND last char is '.'
-*/
-
-//check case, period
-
-
-let str = prompt("Enter a word or sentence without capitalization and period at the end.")
-
-function check(){
-
-
-    if((str.charAt(0) === str.charAt(0).toUpperCase()) && (str.slice(-1) !== ".")) {
-
-      //first: is uppercase; last is not "."
-      return alert((str.slice(0)) + ".");
-
-    } else if ((str.charAt(0) == str.charAt(0).toLowerCase()) && (str.slice(-1) !== ".")){
-        //not capitalized and no period
-      return alert(str.charAt(0).toUpperCase() + str.slice(1) + ".");
-
-    } else if ((str.charAt(0) !== str.charAt(0).toUpperCase()) && (str.slice(-1) !== ".")){
-
-      return alert((str.charAt(0).toUpperCase()) + (str.slice(1)) + ".");
-    }
-    else if ((str.charAt(0) !== str.charAt(0).toUpperCase()) && (str.slice(-1) == ".")){
-      return alert((str.charAt(0).toUpperCase()) + str.slice(1));
-    } else
-    {
-      alert("Nice English.");
-    }
-
+button.addEventListener(
+  'click',//event you are listening for
+  (e)=> {
+    //ev or event
+    //second arguement = always a callback function
+      //console.log(e);
+      console.log(e.target);
   }
-
-
-check();  //function call
-
-
-/*
-//PALINDROME function
-let string = prompt("Enter a word!");
-
-
-
-
-
-function palindrome(string) {
-
-let length = string.length;
-
-  for (let i = 0; i < Math.floor(length/2); i++)
-  {
-    let k = string[string.length-1-i];
-
-    if(string[i] !== string[k])
-    {
-      return alert("This is NOT a palindrome! Do you even know what that is?");
-    }
-    else{
-      return alert("*LE GASP* This word's spelled the same either direction! IT'S A PALINDROME!");
-    }
-
-  }
-
-}
-
-palindrome(string);
+);
