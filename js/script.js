@@ -38,6 +38,29 @@ button.addEventListener(
     //ev or event
     //second arguement = always a callback function
       //console.log(e);
-      console.log(e.target);
+      alert("Hi!");
   }
 );
+
+
+const div = document.querySelector('div');
+
+div.addEventListener(
+  'mouseenter',
+  (e) => {
+
+    //div.className= 'blue';
+    div.backgroundColor = 'red';
+
+  }
+);
+
+const h1 = document.querySelector('h1');
+
+h1.addEventListener(
+  'mouseup',
+  (e)=> {
+    h1.style.color="blue";
+  }
+
+)
