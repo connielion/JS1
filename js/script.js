@@ -1,66 +1,29 @@
 /*
-let blueDivs = document.getElementsByClassName('blue'); //getElements = array type
-//console.log(blueDivs[0]);//html collection, type array
+Write a program that converts temperatures. It should:
 
-//DOM collection
-let h1 =document.getElementByTagName('h1');
-
-//DOM nodes
-
-let para = document.getElementsByID('para');
-console.log(para);
-
-let queryBlues = document.querySelector('h1'); //gives single element
-
-console.log(queryBlues);
-
-
-let queryBlus = document.querySelectorAll('div'); //gives an array
-console.log(queryBlus);
-
-
-
-
-function queryBodyID(element, methods) {
-  let elementToQ = document.method('element');
-  console.log(elementToQ);  //just bodyQ would give array, need index to give element
-}
-let ep = prompt('Give me an element');
-
-queryBodyID(el, method);
+Employ a function that accepts two arguments: temperature and scale (either celcius or fahrenheit).
+Display the temperature in an h3 with minimal styling.
+When the user clicks on the h3, run the function to convert the temperature.
+Display the converted temperature in the h3.
 */
 
-const button = document.querySelector('.btn-success');
+const h3 = document.querySelector('h3');
 
-button.addEventListener(
-  'click',//event you are listening for
-  (e)=> {
-    //ev or event
-    //second arguement = always a callback function
-      //console.log(e);
-      alert("Hi!");
-  }
-);
+let tempInF = parseInt(prompt("Enter temperature in fahrenheit."));
+
+function convertTemp(tempInF) {
+  let tempInC = parseInt((tempInF - 32)/1.8);
+  return tempInC;
+}
+
+convertTemp(tempInF);
 
 
-const div = document.querySelector('div');
+h3.addEventListener(
+  'click',
 
-div.addEventListener(
-  'mouseenter',
   (e) => {
-
-    //div.className= 'blue';
-    div.backgroundColor = 'red';
-
+      let converted = e.target.innerHTML = convertTemp();
+      convertTemp(tempInF);
   }
 );
-
-const h1 = document.querySelector('h1');
-
-h1.addEventListener(
-  'mouseup',
-  (e)=> {
-    h1.style.color="blue";
-  }
-
-)
