@@ -1,25 +1,15 @@
-const body = document.querySelector('body');
+console.log(document.forms.login.username.value);
 
+document.forms.login.submit.addEventListener(
+  'click',
+  e => {
+    if(!performPasswordcheck){
+        e.preventDefault();//prevent the default action, click
+    }
 
-
-for (let i = 1; i <=100; i++) {
-
-
-  if (i % 15 === 0) {
-    //multiples of 3 and 5
-    console.log("Fizzbuzz");
+    console.log(e.target.value); //target is document.forms.login.username;
+    //logs out the value user inputs
   }
-  else if (i % 3 === 0){
-    //multiple of 3
-    p.textContent = "Fizz";
+); //keylogger can sitll log the value for password! value type depends on input type
 
-  }
-  else if (i % 5 === 0){
-    //multiples of 5
-    p.textContent = "Buzz";
-  }
-  else {
-    p.textContent = i;
-  }
-body.appendChild(p); //appending child to body
-}
+//preventDefault()
