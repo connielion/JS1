@@ -29,7 +29,7 @@ let ep = prompt('Give me an element');
 
 queryBodyID(el, method);
 */
-
+/*
 const button = document.querySelector('.btn-success');
 
 button.addEventListener(
@@ -41,3 +41,34 @@ button.addEventListener(
       console.log(e.target);
   }
 );
+
+//nodeRef.classList.add = 'class-name'; adds class to element
+
+*/
+
+function checkRed(element) {
+
+  if(elememt.classList.contains('red')) {
+    element.classList.remove('red');
+  }
+  else {
+    //add the 'red' class
+  };
+
+}
+
+
+
+const img = document.querySelector('img');
+
+function changeImg(){
+img.setAttribute('src', 'url')
+}
+
+
+img.addEventListener(
+  'click',
+  (e) => {
+    changeImg();
+  }
+)
